@@ -1,16 +1,18 @@
 <?
 
-class CreateUserTable
+class CreatePostsTable
 {
-    public static function usersTable($pdo)
+
+    public static function postsTable($pdo)
     {
         try {
-            $query =  "CREATE TABLE IF NOT EXIST users(
+            $query = "CREATE TABLE IF NOT EXISTS posts(
                 id INT AUTO_INCREMENT PRIMARY KEY,
-                username VARCHAR(255) NOT NULL UNIQUE,
-                email VARCHAR(255) NOT NULL UNIQUE,
-                password VARCHAR(255) NOT NULL,
+                title VARCHAR(255) NOT NULL UNIQUE,
+                slug VARCHAR(255) NOT NULL UNIQUE,
+                body TEXT NOT NULL,
                 thumbnail VARCHAR(255),
+                isPublished VARCHAR(50) default 1,
                 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             )";
             $stmt = $pdo->prepare($query);
