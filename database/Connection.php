@@ -1,21 +1,19 @@
 <?
 class Connection
 {
-    // const USER = "root";
-    // const PASS = "";
-    // const HOST = "localhost";
-    // const DB = "example";
 
-    public static function make()
+    public static function make($config)
     {
-        // $user = self::USER;
-        // $pass = self::PASS;
-        // $host = self::HOST;
-        // $db = self::DB;
-        // $pdo = new PDO("mysql:dbname=$db;host=$host", $user, $pass);
-        // return $pdo;
+        var_dump($config);
         try {
-            return new PDO("mysql:host=127.0.0.1;dbname=crud", 'root', '');
+            return new PDO(
+                'mysql:host=' . $config['host'] . ';dbname=' . $config['dbname'],
+                $config['user'],
+                $config['password']
+
+            );
+            // return new PDO("mysql:host=127.0.0.1;dbname=crud", 'root', '');
+
         } catch (\Throwable $th) {
             die($th->getMessage());
         }
