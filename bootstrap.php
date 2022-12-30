@@ -1,8 +1,11 @@
 <?
-require "database/Connection.php";
-$config = require "database/config.php";
-require "database/migrations/CreateUsersTable.php";
-require "database/migrations/CreatePostsTable.php";
+
+$config = require "config.php";
+
+// require "database/Connection.php";
+
+// require "database/migrations/CreateUsersTable.php";
+// require "database/migrations/CreatePostsTable.php";
 
 
 

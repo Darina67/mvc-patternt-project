@@ -4,7 +4,7 @@ class Connection
 
     public static function make($config)
     {
-        var_dump($config);
+        // var_dump($config);
         try {
             return new PDO(
                 'mysql:host=' . $config['host'] . ';dbname=' . $config['dbname'],
