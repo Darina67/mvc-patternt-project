@@ -15,4 +15,4 @@ $router = new Router;
 
 require "routes.php";
 
-$router->show('posts');
+require $router->show('');
