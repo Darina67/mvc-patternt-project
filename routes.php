@@ -1,9 +1,4 @@
 <?php
 
-$router->define(
-    [
-        '' => "controllers/index.php",
-        'posts' => "controllers/posts.php",
-
-    ]
-    );
+$router->get('', 'DashboardController@index');
+$router->get('posts', 'DashboardController@allPosts');
