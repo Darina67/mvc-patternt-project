@@ -1,8 +1,11 @@
 <?php
 
-class App{
+namespace App;
 
-    protected static $registry =[];
+class App
+{
+
+    protected static $registry = [];
 
     public static function bind($key, $value)
     {
@@ -10,7 +13,7 @@ class App{
     }
 
     public static function get($key)
-    { 
-       return static::$registry[$key];
-    } 
+    {
+        return static::$registry[$key];
+    }
 }

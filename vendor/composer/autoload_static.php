@@ -6,18 +6,24 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit875476188d8fc632e51441f4a9cfb6c0
 {
+    public static $files = array (
+        'e320f53bb3364b7ed572ecc5ef33c5cf' => __DIR__ . '/../..' . '/app/helpers.php',
+    );
+
     public static $classMap = array (
-        'App' => __DIR__ . '/../..' . '/App.php',
+        'App\\App' => __DIR__ . '/../..' . '/app/App.php',
+        'App\\Controllers\\DashboardController' => __DIR__ . '/../..' . '/app/Controllers/DashboardController.php',
+        'App\\Controllers\\PostsController' => __DIR__ . '/../..' . '/app/Controllers/PostsController.php',
+        'App\\Models\\Post' => __DIR__ . '/../..' . '/app/Models/Post.php',
+        'App\\Request' => __DIR__ . '/../..' . '/app/Request.php',
+        'App\\Router' => __DIR__ . '/../..' . '/app/Router.php',
         'ComposerAutoloaderInit875476188d8fc632e51441f4a9cfb6c0' => __DIR__ . '/..' . '/composer/autoload_real.php',
         'Composer\\Autoload\\ClassLoader' => __DIR__ . '/..' . '/composer/ClassLoader.php',
         'Composer\\Autoload\\ComposerStaticInit875476188d8fc632e51441f4a9cfb6c0' => __DIR__ . '/..' . '/composer/autoload_static.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'Connection' => __DIR__ . '/../..' . '/database/Connection.php',
         'CreatePostsTable' => __DIR__ . '/../..' . '/database/migrations/CreatePostsTable.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/CreateUsersTable.php',
-        'DashboardController' => __DIR__ . '/../..' . '/controllers/DashboardController.php',
-        'Request' => __DIR__ . '/../..' . '/Request.php',
-        'Router' => __DIR__ . '/../..' . '/Router.php',
+        'Database\\Connection' => __DIR__ . '/../..' . '/database/Connection.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

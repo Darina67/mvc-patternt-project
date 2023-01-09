@@ -1,6 +1,9 @@
 <?php
 
-class Router {
+namespace App;
+
+class Router
+{
 
     protected $routes = [
         'GET' => [],
@@ -22,31 +25,34 @@ class Router {
         $this->routes['POST'][$uri] = $controller;
     }
 
-    public static function load($file){
-        
+    public static function load($file)
+    {
+
         $router = new static;
-        
+
         require $file;
 
         return $router;
-
     }
 
-    public function show($uri, $method){
-    
-        if(array_key_exists($uri, $this->routes[$method])){
-          
-          return $this->callMethod(...explode('@', $this->routes[$method][$uri]));
+    public function show($uri, $method)
+    {
+
+        if (array_key_exists($uri, $this->routes[$method])) {
+
+            return $this->callMethod(...explode('@', $this->routes[$method][$uri]));
             // return $this->routes[$method][$uri];
         }
 
         throw new Exception('Route not found.');
     }
 
-    public function callMethod($controller, $action){
-      
-        $cont = new $controller;
-      
+    public function callMethod($controller, $action)
+    {
+        $link = "App\\Controllers\\{$controller}";
+
+        $cont = new $link;
+
         return $cont->$action();
-          }
+    }
 }
