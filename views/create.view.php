@@ -105,7 +105,6 @@ require __DIR__ . './partials/_header.php';
 </div>
 </div>
 </main>
-<script src="../public/assets/js/validation.js"></script>
-</body>
-
-</html>
+<?php
+require __DIR__ . './partials/_footer.php';
+?>
