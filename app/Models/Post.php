@@ -18,11 +18,7 @@ class Post
             $stmt = connect()->prepare($query);
             $stmt->execute($data);
 
-            startSession();
-
-            setSession('success', 'Post added successfully!');
-
-            // $_SESSION['msg'] = 'Post added successfully!';
+            setSession('success', 'Пост добавлен!');
 
             header("Location: /posts/create");
         } catch (\Throwable $th) {

@@ -41,7 +41,6 @@ if (!function_exists('startSession')) {
 
     function startSession()
     {
-
         ob_start();
         session_start();
     }
@@ -51,7 +50,7 @@ if (!function_exists('getSession')) {
 
     function getSession($name)
     {
-        $_SESSION[$name];
+        return  $_SESSION[$name];
     }
 }
 
