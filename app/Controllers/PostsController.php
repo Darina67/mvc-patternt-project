@@ -7,6 +7,14 @@ use App\Models\Post;
 
 class PostsController
 {
+    public function index()
+    {
+        $posts = (new Post)->AllPost('posts');
+        // dd($posts);
+
+        return view("posts", ['posts' => $posts]);
+    }
+
     public function store()
     {
 
@@ -20,5 +28,15 @@ class PostsController
         move_uploaded_file($filepath, $imgUrl);
 
         (new Post)->storePost($imgUrl, Request::values());
+    }
+    public function show()
+    {
+        $post = (new Post)->showPost('posts', Request::values()['id']);
+
+        return view("show", ['post' => $post]);
+    }
+    public function delete()
+    {
+        (new Post)->deletePost('posts', Request::values()['id']);
     }
 }

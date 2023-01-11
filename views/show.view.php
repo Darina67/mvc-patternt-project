@@ -44,39 +44,39 @@ require __DIR__ . './partials/_header.php';
                 </div>
                 <div class="lg:flex items-center border-b pb-2">
                     <div class="min-w-max">
-                        <h2 class="font-bold text-lg mr-4">Title:</h2>
+                        <h2 class="font-bold text-lg mr-4">Заголовок</h2>
                     </div>
                     <div class="w-3/5">
-                        <p>Mollitia tempor volu</p>
+                        <p><?= $post->title; ?></p>
                     </div>
                 </div>
                 <div class="lg:flex items-center border-b pb-2">
                     <div class="min-w-max">
-                        <h2 class="font-bold text-lg mr-4">Slug:</h2>
+                        <h2 class="font-bold text-lg mr-4">Описание:</h2>
                     </div>
                     <div class="w-3/5">
-                        <p>ducimus-voluptas-au</p>
+                        <p><?= $post->slug; ?></p>
                     </div>
                 </div>
                 <div class="lg:flex items-center border-b pb-2">
                     <div class="min-w-max">
-                        <h2 class="font-bold text-lg mr-4">Body:</h2>
+                        <h2 class="font-bold text-lg mr-4">Текст:</h2>
                     </div>
                     <div class="w-3/5">
-                        <p>Repellendus Natus nhdfh</p>
+                        <p><?= $post->body; ?></p>
                     </div>
                 </div>
                 <div class="lg:flex items-center border-b pb-2">
                     <div class="min-w-max">
-                        <h2 class="font-bold text-lg mr-4">Status:</h2>
+                        <h2 class="font-bold text-lg mr-4">Статус:</h2>
                     </div>
                     <div class="w-3/5">
-                        <p>Published</p>
+                        <p><?= $post->isPublished; ?></p>
                     </div>
                 </div>
                 <div class="lg:flex items-center border-b pb-2">
                     <div class="min-w-max">
-                        <h2 class="font-bold text-lg mr-4">Created:</h2>
+                        <h2 class="font-bold text-lg mr-4">Создан:</h2>
                     </div>
                     <div class="w-3/5">
                         <p>2022-08-31 20:46:05</p>
@@ -84,11 +84,11 @@ require __DIR__ . './partials/_header.php';
                 </div>
                 <div class="lg:flex border-b pb-2">
                     <div class="min-w-max">
-                        <h2 class="font-bold text-lg mr-4">Thumbnail:</h2>
+                        <h2 class="font-bold text-lg mr-4">Картинка:</h2>
                     </div>
                     <div class="w-3/5">
                         <p>
-                            <img src="../public/assets/thumbnails/800x400.png" class="mt-3" alt="" width="300" id="imgTag" />
+                            <img src="<?= "../" .  $post->thumbnail ?>" class="mt-3" alt="" width="300" id="imgTag" />
                         </p>
                     </div>
                 </div>
