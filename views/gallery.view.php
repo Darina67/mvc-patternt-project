@@ -26,7 +26,7 @@ require __DIR__ . './partials/_header.php';
                             </a>
                         </li>
                         <li>
-                            <a class="w-full inline-flex" href="/gallery">
+                            <a class="active w-full inline-flex" href="/gallery">
                                 <svg class="w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
                                     <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
@@ -49,61 +49,42 @@ require __DIR__ . './partials/_header.php';
             </div>
             <div class="col-span-4">
                 <div class="flex justify-between mb-4">
-                    <h3 class="mb-4 text-xl font-bold">View Post</h3>
+                    <h3 class="mb-4 text-xl font-bold">Галерея</h3>
                 </div>
-                <div class="lg:flex items-center border-b pb-2">
-                    <div class="min-w-max">
-                        <h2 class="font-bold text-lg mr-4">Заголовок</h2>
+                <!-- Gallery -->
+                <div class="gallery">
+                    <div class="mb-4">
+                        <a data-fslightbox="gallery1" href="../public/assets/img/1.webp">
+                            <img src="../public/assets/img/1.webp" alt="photo">
+                        </a>
+                        <a data-fslightbox="gallery1" href="../public/assets/img/2.webp">
+                            <img src="../public/assets/img/2.webp" alt="photo">
+                        </a>
                     </div>
-                    <div class="w-3/5">
-                        <p><?= $post->title; ?></p>
+
+                    <div class=" mb-4">
+                        <a data-fslightbox="gallery1" href="../public/assets/img/3.webp">
+                            <img src="../public/assets/img/3.webp" alt="photo">
+                        </a>
+                        <a data-fslightbox="gallery1" href="../public/assets/img/4.webp">
+                            <img src="../public/assets/img/4.webp" alt="photo">
+                        </a>
                     </div>
-                </div>
-                <div class="lg:flex items-center border-b pb-2">
-                    <div class="min-w-max">
-                        <h2 class="font-bold text-lg mr-4">Описание:</h2>
-                    </div>
-                    <div class="w-3/5">
-                        <p><?= $post->slug; ?></p>
-                    </div>
-                </div>
-                <div class="lg:flex items-center border-b pb-2">
-                    <div class="min-w-max">
-                        <h2 class="font-bold text-lg mr-4">Текст:</h2>
-                    </div>
-                    <div class="w-3/5">
-                        <p><?= $post->body; ?></p>
-                    </div>
-                </div>
-                <div class="lg:flex items-center border-b pb-2">
-                    <div class="min-w-max">
-                        <h2 class="font-bold text-lg mr-4">Статус:</h2>
-                    </div>
-                    <div class="w-3/5">
-                        <p><?= $post->isPublished; ?></p>
+
+                    <div class=" mb-4">
+                        <a data-fslightbox="gallery1" href="../public/assets/img/5.webp">
+                            <img src="../public/assets/img/5.webp" alt="photo">
+                        </a>
+                        <a data-fslightbox="gallery1" href="../public/assets/img/6.webp">
+                            <img src="../public/assets/img/6.webp" alt="photo">
+                        </a>
                     </div>
                 </div>
-                <div class="lg:flex items-center border-b pb-2">
-                    <div class="min-w-max">
-                        <h2 class="font-bold text-lg mr-4">Создан:</h2>
-                    </div>
-                    <div class="w-3/5">
-                        <p>2022-08-31 20:46:05</p>
-                    </div>
-                </div>
-                <div class="lg:flex border-b pb-2">
-                    <div class="min-w-max">
-                        <h2 class="font-bold text-lg mr-4">Картинка:</h2>
-                    </div>
-                    <div class="w-3/5">
-                        <p>
-                            <img src="<?= "../" .  $post->thumbnail ?>" class="mt-3" alt="" width="300" id="imgTag" />
-                        </p>
-                    </div>
-                </div>
+                <!-- Gallery -->
             </div>
         </div>
     </div>
+</div>
 </div>
 </div>
 </main>

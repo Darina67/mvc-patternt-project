@@ -1,6 +1,7 @@
 <?php
 
 $router->get('', 'DashboardController@index');
+$router->get('gallery', 'DashboardController@gallery');
 // $router->get('posts', 'DashboardController@allPosts');
 $router->get('posts/create', 'DashboardController@create');
 // $router->get('posts/view', 'DashboardController@show');

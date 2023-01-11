@@ -1,6 +1,12 @@
 .left-menu li a.active {
-    background-color: #CA8A04;
-    border-radius: 5px;
-    padding: 6px 3px;
-    color: #fff
+  background-color: #ca8a04;
+  border-radius: 5px;
+  padding: 6px 3px;
+  color: #fff;
+}
+.gallery {
+  display: flex;
+}
+img {
+  padding: 10px;
 }

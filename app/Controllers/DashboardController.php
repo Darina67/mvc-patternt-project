@@ -35,4 +35,9 @@ class DashboardController
     {
         echo ("delete");
     }
+
+    public function gallery()
+    {
+        return view("gallery");
+    }
 }
