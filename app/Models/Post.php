@@ -18,6 +18,7 @@ class Post
             $stmt = connect()->prepare($query);
             $stmt->execute($data);
 
+            startSession();
             setSession('success', 'Пост добавлен!');
 
             header("Location: /posts/create");

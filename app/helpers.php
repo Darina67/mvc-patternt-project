@@ -50,7 +50,7 @@ if (!function_exists('getSession')) {
 
     function getSession($name)
     {
-        return  $_SESSION[$name];
+        return $_SESSION[$name];
     }
 }
 
