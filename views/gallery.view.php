@@ -53,32 +53,30 @@ require __DIR__ . './partials/_header.php';
                 </div>
                 <!-- Gallery -->
                 <div class="gallery">
-
-                    <a data-fslightbox="gallery1" href="../public/assets/img/1.webp">
-                        <img src="../public/assets/img/1.webp" alt="photo">
-                    </a>
-                    <a data-fslightbox="gallery1" href="../public/assets/img/2.webp">
-                        <img src="../public/assets/img/2.webp" alt="photo">
-                    </a>
-
-
-
-                    <a data-fslightbox="gallery1" href="../public/assets/img/3.webp">
-                        <img src="../public/assets/img/3.webp" alt="photo">
-                    </a>
-                    <a data-fslightbox="gallery1" href="../public/assets/img/4.webp">
-                        <img src="../public/assets/img/4.webp" alt="photo">
-                    </a>
-
-
-
-                    <a data-fslightbox="gallery1" href="../public/assets/img/5.webp">
-                        <img src="../public/assets/img/5.webp" alt="photo">
-                    </a>
-                    <a data-fslightbox="gallery1" href="../public/assets/img/6.webp">
-                        <img src="../public/assets/img/6.webp" alt="photo">
-                    </a>
-
+                    <div class="mb-4">
+                        <a data-fslightbox="gallery1" href="../public/assets/img/1.webp">
+                            <img src="../public/assets/img/1.webp" alt="photo">
+                        </a>
+                        <a data-fslightbox="gallery1" href="../public/assets/img/2.webp">
+                            <img src="../public/assets/img/2.webp" alt="photo">
+                        </a>
+                    </div>
+                    <div class="mb-4">
+                        <a data-fslightbox="gallery1" href="../public/assets/img/3.webp">
+                            <img src="../public/assets/img/3.webp" alt="photo">
+                        </a>
+                        <a data-fslightbox="gallery1" href="../public/assets/img/4.webp">
+                            <img src="../public/assets/img/4.webp" alt="photo">
+                        </a>
+                    </div>
+                    <div class="mb-4">
+                        <a data-fslightbox="gallery1" href="../public/assets/img/5.webp">
+                            <img src="../public/assets/img/5.webp" alt="photo">
+                        </a>
+                        <a data-fslightbox="gallery1" href="../public/assets/img/6.webp">
+                            <img src="../public/assets/img/6.webp" alt="photo">
+                        </a>
+                    </div>
                 </div>
                 <!-- Gallery -->
             </div>

@@ -41,7 +41,7 @@ class Post
             die($th->getMessage());
         }
 
-        // dd($data);
+        dd($data);
     }
 
     public function showPost($table, $id)
