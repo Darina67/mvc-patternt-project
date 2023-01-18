@@ -41,7 +41,7 @@ class Post
             die($th->getMessage());
         }
 
-        dd($data);
+        // dd($data);
     }
 
     public function showPost($table, $id)
@@ -61,7 +61,7 @@ class Post
             startSession();
             setSession('deleted', 'Пост удален!');
 
-            header("Location: /main/posts");
+            header("Location: /posts");
         } catch (\Throwable $th) {
             die($th->getMessage());
         }

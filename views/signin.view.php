@@ -7,7 +7,7 @@ startSession();
         <h3 class="mb-4 text-xl font-bold text-center mt-10">Авторизация</h3>
         <div class="w-full">
             <div id="message"></div>
-            <form id="loginForm" action="login/session" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" method="POST">
+            <form id="loginForm" action="/" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" method="POST">
                 <div class="mb-4">
                     <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
                         Email

@@ -17,7 +17,6 @@
 
 <script src="//cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 <script src="../public/assets/js/app.js"></script>
-<script src="../public/js/fslightbox.js"></script>
 <script src="../public/assets/js/validation.js"></script>
 </body>
 

@@ -4,7 +4,7 @@
   padding: 6px 3px;
   color: #fff;
 }
-.gallery {
+.gallery__wrapper {
   display: flex;
 }
 img {

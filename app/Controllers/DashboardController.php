@@ -11,11 +11,6 @@ class DashboardController
         return view("index");
     }
 
-    public function allPosts()
-    {
-        return view("posts");
-    }
-
     public function create()
     {
         return view("create");
@@ -30,12 +25,6 @@ class DashboardController
     {
         return view("edit");
     }
-
-    public function delete()
-    {
-        echo ("delete");
-    }
-
     public function gallery()
     {
         return view("gallery");
