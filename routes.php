@@ -1,14 +1,17 @@
 <?php
 
-$router->get('', 'DashboardController@index');
-$router->get('gallery', 'DashboardController@gallery');
+$router->get('', 'AuthorizationController@index');
+$router->post('login/session', 'AuthorizationController@signin');
+
+$router->get('main', 'DashboardController@index');
+$router->get('main/gallery', 'DashboardController@gallery');
 // $router->get('posts', 'DashboardController@allPosts');
-$router->get('posts/create', 'DashboardController@create');
+$router->get('main/posts/create', 'DashboardController@create');
 // $router->get('posts/view', 'DashboardController@show');
-$router->get('posts/edit', 'DashboardController@edit');
+$router->get('main/posts/edit', 'DashboardController@edit');
 // $router->post('posts/delete', 'DashboardController@delete');
 
-$router->get('posts', 'PostsController@index');
-$router->post('posts/store', 'PostsController@store');
-$router->get('posts/view', 'PostsController@show');
-$router->post('posts/delete', 'PostsController@delete');
+$router->get('main/posts', 'PostsController@index');
+$router->post('main/posts/store', 'PostsController@store');
+$router->get('main/posts/view', 'PostsController@show');
+$router->post('main/posts/delete', 'PostsController@delete');

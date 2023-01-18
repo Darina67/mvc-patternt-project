@@ -61,7 +61,7 @@ class Post
             startSession();
             setSession('deleted', 'Пост удален!');
 
-            header("Location: /posts");
+            header("Location: /main/posts");
         } catch (\Throwable $th) {
             die($th->getMessage());
         }
