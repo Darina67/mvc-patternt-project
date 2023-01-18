@@ -1,5 +1,8 @@
 <?php
 
+$router->get('', 'AuthorizationController@index');
+
+
 $router->get('main', 'DashboardController@index');
 $router->get('posts/create', 'DashboardController@create');
 $router->get('posts/edit', 'DashboardController@edit');
