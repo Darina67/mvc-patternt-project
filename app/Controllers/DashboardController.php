@@ -40,4 +40,8 @@ class DashboardController
     {
         return view("gallery");
     }
+    public function logout()
+    {
+        echo "logout";
+    }
 }

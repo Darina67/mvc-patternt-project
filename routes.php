@@ -10,6 +10,8 @@ $router->get('main/posts/create', 'DashboardController@create');
 // $router->get('posts/view', 'DashboardController@show');
 $router->get('main/posts/edit', 'DashboardController@edit');
 // $router->post('posts/delete', 'DashboardController@delete');
+$router->get('main/logout', 'DashboardController@logout');
+
 
 $router->get('main/posts', 'PostsController@index');
 $router->post('main/posts/store', 'PostsController@store');

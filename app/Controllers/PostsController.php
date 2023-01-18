@@ -28,6 +28,8 @@ class PostsController
         move_uploaded_file($filepath, $imgUrl);
 
         (new Post)->storePost($imgUrl, Request::values());
+
+        header("Location: /main/posts");
     }
     public function show()
     {
